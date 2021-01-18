@@ -22,13 +22,10 @@ export const customToast = (text, type) => {
     switch (type) {
         case TOAST_TYPE.ERROR:
             return toast.error(text, config);
-            break;
         case TOAST_TYPE.SUCCESS:
             return toast.success(text, config);
-            break;
         case TOAST_TYPE.WARNING:
             return toast.warning(text, config);
-            break;
         case TOAST_TYPE.INFO:
             toast.info(text, config);
             break;
