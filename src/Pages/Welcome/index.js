@@ -1,4 +1,5 @@
 import React from 'react'
+import MealCard from '../../Components/MealCard'
 import './styles.scss'
 
 const Welcome = () => {
@@ -6,9 +7,9 @@ const Welcome = () => {
     return (
         <div className={"welcomePage-wrapper"}>
             <div className={'welcomePage-titles'}>
-                <h1>Bienvenue sur LovEat</h1>
-                <p>This project is in progess.</p>
-                <p>New updates soon !</p>
+
+                <p>Za vous za plus ?</p>
+                <MealCard />
             </div>
         </div>
     )
