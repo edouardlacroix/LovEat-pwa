@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { useHistory } from "react-router-dom";
 import logo from '../../Assets/Images/logo.svg'
+import { RiAccountCircleFill } from 'react-icons/ri';
+
 
 import './styles.css'
 
@@ -18,7 +20,7 @@ const Topbar = (props) => {
                 <img onClick={() => history.push('/welcome')} src={logo} />
             </div>
             <div className={'side'}>
-                <a className={'deco'} onClick={() => history.push('/myaccount')}>A</a>
+                <RiAccountCircleFill onClick={() => history.push('/myaccount')} />
             </div>
         </div >
     )

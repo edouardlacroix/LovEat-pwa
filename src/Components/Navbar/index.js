@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import { useHistory } from "react-router-dom";
 import { customToast, TOAST_TYPE } from '../../Base/Utils/Toasts'
+import { MdPermContactCalendar } from 'react-icons/md';
+import { AiFillHome } from 'react-icons/ai';
+import { IoIosListBox } from 'react-icons/io';
+
+
 import PropTypes from 'prop-types';
 import './styles.css'
 
@@ -16,9 +21,9 @@ const Navbar = (props) => {
     return (
         <div className={'navbar-wrapper '} >
             <div className={'navbar-items-wrapper'}>
-                {/* Change to icons */}
-                <p onClick={() => navigateTo()}>Home</p>
-                <p onClick={() => customToast('This page is not yet available')}> Contact</p>
+                <AiFillHome onClick={() => navigateTo()} />
+                <IoIosListBox onClick={() => customToast('Futur list of meals')} />
+                <MdPermContactCalendar onClick={() => customToast('Futur list on inApp contact')} />
             </div>
 
         </div>

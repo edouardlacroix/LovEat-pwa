@@ -5,12 +5,16 @@
     align-items:center;
     flex-direction: row;
     bottom: 0;
-    height: 70px;
+    height: 60px;
     width: 100%;
     background-color: #424242;
     z-index: 10;
   }
-
+  .navbar-wrapper svg{
+    width: 100%;
+    height: 30px;
+    color: white;
+  }
 
   .navbar-wrapper .navbar-items-wrapper{
     display: flex;
