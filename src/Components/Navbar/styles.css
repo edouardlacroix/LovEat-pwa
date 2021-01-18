@@ -1,0 +1,30 @@
+.navbar-wrapper{
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    flex-direction: row;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #424242;
+    z-index: 10;
+  }
+
+
+  .navbar-wrapper .navbar-items-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .navbar-wrapper .navbar-items-wrapper p{
+    margin:0px 5px 0px 5px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50px;
+  }

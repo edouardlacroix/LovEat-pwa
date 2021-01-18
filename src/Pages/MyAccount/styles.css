@@ -1,0 +1,20 @@
+.myaccount-wrapper{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.myaccount-wrapper p{
+    margin:0;
+    padding:10px
+
+}
+
+.myaccount-wrapper .myaccount-disconnect{
+    color:red;
+    font-weight: bold;
+    text-decoration: underline;
+}

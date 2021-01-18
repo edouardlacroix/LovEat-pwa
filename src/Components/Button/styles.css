@@ -1,0 +1,36 @@
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:white;
+    transition: 0.3s;
+    width: 200px;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.button-wrapper:hover {
+    background-color: #062ddd;
+    transition: 0.3s;
+}
+
+.button-wrapper a {
+ padding:20px 15px 20px 15px;
+}
+
+.button-wrapper-disabled{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(104, 104, 104, 0.438);
+    color:white;
+    transition: 0.3s;
+    width: 200px;
+}
+
+.button-wrapper-disabled a{
+    padding:20px 15px 20px 15px;
+
+}

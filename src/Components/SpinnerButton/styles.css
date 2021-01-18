@@ -1,0 +1,53 @@
+.spinnerButton-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:white;
+    transition: 0.3s;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;    
+    cursor: pointer;
+
+}
+
+.spinnerButton-wrapper:hover {
+    background-color: #062ddd;
+    transition: 0.3s;
+}
+
+.spinnerButton-wrapper a {
+ padding:20px 15px 20px 15px;
+}
+
+.spinnerButton-wrapper .spinnerImage {
+   /* width: 100%; */
+   height: 70%;
+   animation: rotate 0.7s linear infinite;
+    opacity: 0.7;
+   }
+   
+
+.spinnerButton-wrapper-disabled{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(104, 104, 104, 0.438);
+    color:white;
+    transition: 0.3s;
+    width: 200px;
+}
+
+.spinnerButton-wrapper-disabled a{
+    padding:20px 15px 20px 15px;
+
+}
+
+
+
+/* ############################          ANIMATION             ###################################" */
+@keyframes rotate{
+    to{ transform: rotate(360deg); }
+  }
+  

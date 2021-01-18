@@ -1,0 +1,21 @@
+.privateRoute-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.privateRoute-topbar-wrapper{
+    width: 100%;
+    height: 10%;
+}
+
+.privateRoute-content-wrapper{
+    /* Not setting 80% to avoid info behing the menu button
+    Set back to 80% if we decide to make a simple navbar */
+    height: 77%;
+    width: 100%;
+}
+
+.privateRoute-navbar-wrapper{
+    height: 10%;
+    width: 100%;
+}
