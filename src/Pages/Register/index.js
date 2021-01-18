@@ -6,7 +6,7 @@ import { Cookies, useCookies } from 'react-cookie';
 import { useHistory } from "react-router-dom";
 import { apiRegister } from './api'
 import logo from '../../Assets/Images/logo.svg'
-import './styles.css'
+import './styles.scss'
 
 
 const Register = () => {

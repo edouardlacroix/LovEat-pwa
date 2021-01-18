@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useStore } from 'react-redux'
 
 import axios from 'axios';
-import './styles.css'
+import './styles.scss'
 
 
 import LanguagesSelector from '../../Components/LanguagesSelector'

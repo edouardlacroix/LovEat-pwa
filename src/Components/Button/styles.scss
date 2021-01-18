@@ -1,18 +1,19 @@
+@import '../../Base/Utils/Styles/colors.scss';
+
 .button-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color:white;
+    background-color: $base-color;
+    color:$base-text-color;
     transition: 0.3s;
     width: 200px;
     border-radius: 50px;
     cursor: pointer;
-
 }
 
 .button-wrapper:hover {
-    background-color: #062ddd;
+    background-color: $base-color;
     transition: 0.3s;
 }
 
@@ -25,7 +26,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(104, 104, 104, 0.438);
-    color:white;
+    color:$base-text-color;
     transition: 0.3s;
     width: 200px;
 }

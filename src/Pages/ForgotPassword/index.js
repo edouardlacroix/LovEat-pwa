@@ -6,7 +6,7 @@ import { Cookies } from 'react-cookie';
 import { customToast, TOAST_TYPE } from '../../Base/Utils/Toasts';
 import { useHistory } from "react-router-dom";
 import logo from '../../Assets/Images/logo.svg'
-import './styles.css'
+import './styles.scss'
 
 
 const ForgotPassword = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import './styles.css'
+import './styles.scss'
 
 // Add the new name in here to see it appears in the component
 const currentAvailableLanguages = [

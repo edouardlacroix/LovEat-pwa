@@ -1,5 +1,6 @@
-import { toast } from 'react-toastify';
+import { toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './styles.scss'
 
 
 /**
@@ -9,13 +10,15 @@ import 'react-toastify/dist/ReactToastify.css';
  */
 export const customToast = (text, type) => {
     //Here you can customize the toast
+    // Transition is located in ToastContainer
     const config = {
         position: "top-center",
-        autoClose: 3000,
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: false,
         draggable: true,
+        autoClose: 3000,
+        newestOnTop: true,
     }
 
     // Switch through all the possible type of toast

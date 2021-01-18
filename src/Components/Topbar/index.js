@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import { useHistory } from "react-router-dom";
 import logo from '../../Assets/Images/logo.svg'
 import { RiAccountCircleFill } from 'react-icons/ri';
+import { FaFontAwesomeLogoFull } from 'react-icons/fa';
 
 
-import './styles.css'
+
+import './styles.scss'
 
 
 const Topbar = (props) => {
@@ -17,7 +19,7 @@ const Topbar = (props) => {
                 <a onClick={() => history.push('/welcome')}></a>
             </div>
             <div className={'center'}>
-                <img onClick={() => history.push('/welcome')} src={logo} />
+                <p onClick={() => history.push('/welcome')}>Lov'Eat</p>
             </div>
             <div className={'side'}>
                 <RiAccountCircleFill onClick={() => history.push('/myaccount')} />

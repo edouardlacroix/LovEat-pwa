@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 import loadingSpinner from '../../Assets/Images/loadingSpinner.png'
-import './styles.css'
+import './styles.scss'
 
 
 const SpinnerButton = (props) => {

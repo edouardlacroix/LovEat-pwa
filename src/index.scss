@@ -1,6 +1,8 @@
+@import './Base//Utils//Styles/fonts.scss';
+
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $base-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: normal;

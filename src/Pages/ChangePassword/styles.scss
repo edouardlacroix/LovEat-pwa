@@ -1,3 +1,5 @@
+@import '../../Base//Utils/Styles/colors.scss';
+
 .changePasswordPage-wrapper{
     width: 100%;
     height: 100%;
@@ -36,5 +38,5 @@
 }
 
 .changePasswordPage-wrapper .changePasswordPage-register {
-    color:black !important;
+    color:#263238 !important;
 }

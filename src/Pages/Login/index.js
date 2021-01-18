@@ -8,7 +8,7 @@ import { useHistory } from "react-router-dom";
 import logo from '../../Assets/Images/logo.svg'
 import { useDispatch } from 'react-redux'
 import { setUserInfo } from '../App/Redux/Actions'
-import './styles.css'
+import './styles.scss'
 
 
 const Login = () => {
@@ -48,6 +48,7 @@ const Login = () => {
         <div className={'loginPage-wrapper'}>
 
             <img src={logo} />
+            <h2>Lov'Eat </h2>
             <div className={'loginPage-inputs'}>
                 <Input value={mail} onChange={value => setMail(value)} placeholder={'Email'} />
                 <Input value={password} onChange={value => setPassword(value)} placeholder={'Password'} type={'password'} />

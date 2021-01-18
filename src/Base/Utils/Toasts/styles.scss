@@ -1,0 +1,42 @@
+
+@import '../Styles/colors';
+
+.Toastify__toast-container{
+    padding: 5px 5px 0px 5px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.Toastify__toast-container .Toastify__toast{
+    border-radius: 10px;
+    margin-top: 5px;
+    opacity: 1;
+
+}
+
+.Toastify__toast-container .Toastify__close-button{
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Toastify__toast--default {
+    background-color: $info-color;
+}
+
+.Toastify__toast--info {
+    background-color: $info-color;
+}
+
+.Toastify__toast--success {
+    background-color: $success-color;
+}
+
+.Toastify__toast--warning {
+    background-color: $warning-color;
+}
+
+.Toastify__toast--error {
+    background-color: $error-color;
+}

@@ -1,12 +1,13 @@
+@import '../../Base/Utils/Styles/colors.scss';
+
 .topbar-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color:$base-color-dark;
     height: 100%;
     width: 100%;
-    color:black;
-    /* border-bottom: 1px solid grey; */
+    color:$secondary-color-light;
     box-shadow: 0 4px 5px -2px rgba(0,0,0,.2);
 
 }
@@ -25,6 +26,7 @@
     height:100%;
     width: 100%;
     max-width: 50px;
+    color:white;
 }
 
 .topbar-wrapper .center{
@@ -35,10 +37,8 @@
     height: 100%;
 }
 
-.topbar-wrapper .center img{
-    height: 60%;
-    padding-bottom: 5px;
+
+.topbar-wrapper .center p{
+    color: white;
+    font-size: 22px;
 }
-
-
-

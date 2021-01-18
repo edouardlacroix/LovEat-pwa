@@ -1,9 +1,13 @@
+@import '../../Base/Utils/Styles/colors.scss';
+@import '../../Base/Utils/Styles/fonts.scss';
+
+
 .input-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    color:black;
+    color:$base-color;
     transition: 0.3s;
     max-width: 300px;
     width: 100%;
@@ -16,7 +20,7 @@
     height: 100%;
     padding-left:5px;
     border-radius: 15px;
-
+    font-family: $base-font;
 }
 
 .input-wrapper input:focus {
@@ -29,7 +33,7 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    color:black;
+    color:$base-color;
     transition: 0.3s;
     max-width: 300px;
     width: 100%;

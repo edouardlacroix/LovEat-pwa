@@ -1,3 +1,5 @@
+@import '../../Base//Utils/Styles/colors.scss';
+
 .loginPage-wrapper{
     width: 100%;
     height: 100%;
@@ -7,6 +9,9 @@
     flex-direction: column;
 }
 
+.loginPage-wrapper img{
+    height: 10%;
+}
 .loginPage-wrapper p{
    width: 70%;
    margin-bottom: 50px;
@@ -29,9 +34,9 @@
 }
 
 .loginPage-wrapper .loginPage-buttons p{
-   color:grey
+   color:$base-color-light;
 }
 
 .loginPage-wrapper .loginPage-register {
-    color:black !important;
+    color:$base-color !important;
 }

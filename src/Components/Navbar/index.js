@@ -4,10 +4,8 @@ import { customToast, TOAST_TYPE } from '../../Base/Utils/Toasts'
 import { MdPermContactCalendar } from 'react-icons/md';
 import { AiFillHome } from 'react-icons/ai';
 import { IoIosListBox } from 'react-icons/io';
-
-
 import PropTypes from 'prop-types';
-import './styles.css'
+import './styles.scss'
 
 
 const Navbar = (props) => {
