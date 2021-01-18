@@ -16,14 +16,15 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 10%;
+    width: 50px;
     height: 100%;
-    padding-right: 15px;
+    padding-right: 5%;
 }
 
 .topbar-wrapper .side svg{
     height:100%;
     width: 100%;
+    max-width: 50px;
 }
 
 .topbar-wrapper .center{
@@ -35,7 +36,8 @@
 }
 
 .topbar-wrapper .center img{
-    height: 50%;
+    height: 60%;
+    padding-bottom: 5px;
 }
 
 
