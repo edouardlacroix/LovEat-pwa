@@ -7,8 +7,7 @@ const Welcome = () => {
     return (
         <div className={"welcomePage-wrapper"}>
             <div className={'welcomePage-titles'}>
-
-                <p>Za vous za plus ?</p>
+                <h3>Za vous za plus ?</h3>
                 <MealCard />
             </div>
         </div>

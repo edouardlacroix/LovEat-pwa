@@ -1,3 +1,6 @@
+@import '../../Base/Utils/Styles/colors.scss';
+
+
 .welcomePage-wrapper{
     height: 100%;
     width: 100%;
@@ -7,6 +10,7 @@
     justify-content: flex-start;
     overflow: auto;
     padding-bottom: 150px;
+    background-color: $base-color-light ;
 }
 
 .welcomePage-wrapper .welcomePage-titles{
@@ -15,7 +19,12 @@
     justify-content: center;  
     flex-direction: column;
     width: 100%;
-}
+
+    h3{
+        margin-top: 30px;
+        color: white;
+    }
+  }
 
 
 .welcomePage-wrapper .welcomePage-titles h1{
