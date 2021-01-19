@@ -4,7 +4,6 @@ import { GiKnifeFork } from 'react-icons/gi';
 import { MdDirectionsBike } from 'react-icons/md';
 import { FaHandPaper } from 'react-icons/fa';
 import { GiShare } from 'react-icons/gi';
-
 import './styles.scss'
 
 
@@ -12,7 +11,7 @@ const MealCard = (props) => {
 
     const shareClick = (event) => {
         event.stopPropagation()
-        alert('SHARE')
+        alert('SHARE ' + props.meal?.id)
     }
 
     const mealClick = (event) => {
@@ -24,17 +23,17 @@ const MealCard = (props) => {
         // If disabled, style is grey and onClick return null
         <div className={'mealCard-wrapper noSelect'} onClick={event => mealClick(event)}>
             <div className={'mealCard-title'}>
-                <h2>Nom du repas</h2>
+                <h2>{props.meal.name}</h2>
                 <div className={'separator'} />
             </div>
             <div className={'mealCard-ingredient'}>
                 <h3><span>Ingrédients</span></h3>
-                <p>Ingredient 1, Ingredient 2, Ingredient 3,  Ingredient 4,  Ingredient 5</p>
+                <p>{props.meal?.ingredients?.map(item => item + ', ')}</p>
             </div>
             <div className={'icons-wrapper'}>
-                <GiKnifeFork className={'white enabled'} />
-                <MdDirectionsBike className={'white'} />
-                <FaHandPaper className={'white'} />
+                <GiKnifeFork className={props.meal?.restaurant ? 'white enabled' : 'white'} />
+                <MdDirectionsBike className={props.meal?.delivery ? 'white enabled' : 'white'} />
+                <FaHandPaper className={props.meal?.byHand ? 'white enabled' : 'white'} />
             </div>
             <div className={'share'} onClick={event => shareClick(event)}>
                 <GiShare className={'white'} />
