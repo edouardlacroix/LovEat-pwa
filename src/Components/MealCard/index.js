@@ -9,9 +9,20 @@ import './styles.scss'
 
 
 const MealCard = (props) => {
+
+    const shareClick = (event) => {
+        event.stopPropagation()
+        alert('SHARE')
+    }
+
+    const mealClick = (event) => {
+        event.stopPropagation()
+        alert('MEAL')
+    }
+
     return (
         // If disabled, style is grey and onClick return null
-        <div className={'mealCard-wrapper'} onClick={() => props.onClick()}>
+        <div className={'mealCard-wrapper noSelect'} onClick={event => mealClick(event)}>
             <div className={'mealCard-title'}>
                 <h2>Nom du repas</h2>
                 <div className={'separator'} />
@@ -25,7 +36,7 @@ const MealCard = (props) => {
                 <MdDirectionsBike className={'white'} />
                 <FaHandPaper className={'white'} />
             </div>
-            <div className={'share'} onClick={() => null}>
+            <div className={'share'} onClick={event => shareClick(event)}>
                 <GiShare className={'white'} />
             </div>
 

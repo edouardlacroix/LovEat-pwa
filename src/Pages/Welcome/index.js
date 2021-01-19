@@ -9,6 +9,8 @@ const Welcome = () => {
             <div className={'welcomePage-titles'}>
                 <h3>Za vous za plus ?</h3>
                 <MealCard onClick={() => null} />
+
+
             </div>
         </div>
     )
