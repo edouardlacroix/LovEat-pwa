@@ -33,11 +33,12 @@ const Login = () => {
                 axios.post('graphql', { query: userQuery(response.data.user.id) }).then(
                     response => {
                         // Set data of user in store
-                        dispatch(setUserInfo(response.data.data.user)).then(() =>
-                            history.push("/")
-                        )
+                        dispatch(setUserInfo(response.data.data.user))
+                        history.push("/")
                     }
                 )
+                // Route to /
+                history.push("/")
                 setLoading(false)
             })
             .catch(function (error) {
