@@ -14,9 +14,7 @@ const PrivateRoute = ({ children, ...rest }) => {
             render={({ location }) =>
 
                 // If the token is set in the cookie the user can access the private pages
-                // auth?.USER?.token ? (
-                true ? (
-
+                auth?.USER?.token ? (
                     <div className={'privateRoute-wrapper'}>
                         {/* Here we can set element on top of the page to keep a clean frame and css and avoid repetition of import */}
                         <div className={'privateRoute-topbar-wrapper'}>

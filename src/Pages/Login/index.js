@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import SpinnerButton from '../../Components/SpinnerButton'
 import Input from '../../Components/Input'
 import axios from 'axios';
-import { Cookies, useCookies } from 'react-cookie';
+import { setCustomCookie } from '../../Base/Utils/CookiesWrapper'
 import { customToast, TOAST_TYPE } from '../../Base/Utils/Toasts';
 import { useHistory } from "react-router-dom";
 import logo from '../../Assets/Images/logo.svg'
@@ -21,15 +21,14 @@ const Login = () => {
 
 
     const handleConnection = () => {
-        const cookies = new Cookies()
         setLoading(true)
-        axios.post(process.env.REACT_APP_API_URL + 'auth/local/', {
+        axios.post('auth/local/', {
             identifier: mail,
             password: password
         })
             .then(function (response) {
                 // Setting token in cookie USER
-                cookies.set('USER', { token: response.data.jwt }, { path: '/' });
+                setCustomCookie('USER', { token: response.data.jwt })
                 // Set data of user in store
                 dispatch(setUserInfo(response.data.user))
                 // Route to /
