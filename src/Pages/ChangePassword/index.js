@@ -16,7 +16,7 @@ const ForgotPassword = () => {
 
     const handleChangePassword = () => {
         if (password == passwordConfirmation) {
-            axios.post(process.env.REACT_APP_API_URL + 'changePassword', {
+            axios.post('changePassword', {
                 password: password,
             })
                 .then(function (response) {

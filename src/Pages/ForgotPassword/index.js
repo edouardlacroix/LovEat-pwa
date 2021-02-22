@@ -12,13 +12,12 @@ import './styles.scss'
 const ForgotPassword = () => {
     let history = useHistory();
     const [username, setUsername] = useState('')
-    const [password, setPassword] = useState('')
 
     const handleConnection = () => {
         const cookies = new Cookies()
 
-        axios.post(process.env.REACT_APP_API_URL + 'resetPassword', {
-            username: username,
+        axios.post('auth/forgot-password', {
+            identifier: username,
         })
             .then(function (response) {
                 history.push("/")

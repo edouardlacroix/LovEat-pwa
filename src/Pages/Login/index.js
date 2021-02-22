@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import logo from '../../Assets/Images/logo.svg'
 import { useDispatch } from 'react-redux'
 import { setUserInfo } from '../App/Redux/Actions'
+import userQuery from './api'
 import './styles.scss'
 
 
@@ -29,8 +30,13 @@ const Login = () => {
             .then(function (response) {
                 // Setting token in cookie USER
                 setCustomCookie('USER', { token: response.data.jwt })
-                // Set data of user in store
-                dispatch(setUserInfo(response.data.user))
+                axios.post('graphql', { query: userQuery(response.data.user.id) }).then(
+                    response => {
+                        // Set data of user in store
+                        dispatch(setUserInfo(response.data.data.user))
+                        history.push("/")
+                    }
+                )
                 // Route to /
                 history.push("/")
                 setLoading(false)
