@@ -13,6 +13,10 @@ const userQuery = (id) => {
               id
               name
             }
+            options{
+              id
+              name
+            }
           }
         }
     }`
