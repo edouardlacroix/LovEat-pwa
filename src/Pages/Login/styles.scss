@@ -7,6 +7,19 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+
+    .loginPage-devInfo{
+        position: absolute;
+        top:0;
+        right:0;
+        left:0;
+        width: 100%;
+        p{
+            width: 90%;
+            text-align: right;
+        }
+    }
+
 }
 
 .loginPage-wrapper img{

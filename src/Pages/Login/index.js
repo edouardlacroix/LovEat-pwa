@@ -52,6 +52,9 @@ const Login = () => {
 
             <img src={logo} />
             <h2>Lov'Eat </h2>
+            <div className={'loginPage-devInfo'}>
+                <p>Commit ref : {process.env.VERCEL_GIT_COMMIT_REF}</p>
+            </div>
             <div className={'loginPage-inputs'}>
                 <Input value={mail} onChange={value => setMail(value)} placeholder={'Email'} />
                 <Input value={password} onChange={value => setPassword(value)} placeholder={'Password'} type={'password'} />
